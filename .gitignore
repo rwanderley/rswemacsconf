@@ -1,0 +1,5 @@
+*.db
+*~
+erc-log/*
+auto-save-list/*
+
