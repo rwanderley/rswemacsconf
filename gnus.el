@@ -27,8 +27,8 @@
 
 ;; Available SMTP accounts.
 (defvar smtp-accounts
-;  '((plain   "rodrigoswanderley@gmail.com" "localhost" 25)))
-  '((ssl   "rodrigoswanderley@gmail.com" "smtp.gmail.com" 587 "key" nil)))
+  '((plain   "rodrigoswanderley@gmail.com" "localhost" 25)))
+;  '((ssl   "rodrigoswanderley@gmail.com" "smtp.gmail.com" 587 "key" nil)))
 
 ;; Default smtpmail.el configurations.
 (require 'smtpmail)
