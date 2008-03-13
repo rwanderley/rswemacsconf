@@ -7,6 +7,11 @@
 (setq bbdb/mail-auto-create-p t
       bbdb/news-auto-create-p t)
 
+;(setq gnus-select-method 
+;      '(nnimap "gmail"
+;	       (nnimap-address "localhost")
+;	       (nnimap-server-port 143)))
+
 (setq gnus-select-method 
       '(nnimap "gmail"
 	       (nnimap-address "imap.gmail.com")
