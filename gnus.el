@@ -8,8 +8,15 @@
       bbdb/news-auto-create-p t)
 
 (setq gnus-select-method 
-      '(nnmaildir "gmail"
-		  (directory "~/Gmail")))
+      '(nnimap "gmail"
+	       (nnimap-address "imap.gmail.com")
+	       (nnimap-server-port 993)
+	       (nnimap-stream ssl)))
+
+;; If you want to use local maildirv
+;(setq gnus-select-method 
+;      '(nnmaildir "gmail"
+;	  (directory "~/Gmail")))
 
 (setq gnus-fetch-old-headers nil)
 
