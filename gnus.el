@@ -113,3 +113,8 @@
 
 (gnus-demon-add-handler 'gnus-group-get-new-news 2 t)
 (gnus-demon-init)  ; this is redundant in No Gnus
+
+;; speed things up
+(setq gnus-use-correct-string-widths nil)
+(setq gc-cons-threshold 3500000)
+(gnus-compile)

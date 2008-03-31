@@ -126,6 +126,8 @@ directories and return the filename."
 	(erc-send-action (erc-default-target)
 			 (format "Ouvindo %s." (rsw/emms-get-current-track-name)))))))
 
+(setq erc-auto-query 'bury)
+
 ;; configure logging
 (setq erc-enable-logging t
       erc-log-channels t
