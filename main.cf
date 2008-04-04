@@ -1,3 +1,4 @@
+;; -*- Lisp-Interaction -*-
 ;; Import configurations of some modules I
 ;; use frequently
 (load-file "~/.emacs.d/spelling.el")
@@ -10,7 +11,7 @@
 (load-file "~/.emacs.d/weblogger.el")
 (load-file "~/.emacs.d/gnus.el")
 (load-file "~/.emacs.d/latex.el")
-(load-file "~/.emacs.d/eshell.el")
+(load-file "~/.emacs.d/my-eshell.el")
 (load-file "~/.emacs.d/w3m.el")
 ;(load-file "~/.emacs.d/newsticker.el")
 

@@ -74,7 +74,7 @@
 				   bitlbeepass))))
 
 ;; update nick when emms changes track
-(defvar *default-bitlbee-nick* "Rodrigo [Alemao]")
+(defvar *default-bitlbee-nick* "Rodrigo [Alumônius]")
 
 (defun rsw/erc-enable-emms-change-nick ()
   (interactive)
