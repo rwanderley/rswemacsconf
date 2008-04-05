@@ -118,3 +118,5 @@
 (setq gnus-use-correct-string-widths nil)
 (setq gc-cons-threshold 3500000)
 (gnus-compile)
+
+(provide 'my-gnus)

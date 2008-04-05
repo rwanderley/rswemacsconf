@@ -64,3 +64,5 @@
            (110 "* %u %?" "~/notes.org" "Notes"))))
  '(remember-annotation-functions (quote (org-remember-annotation)))
  '(remember-handler-functions (quote (org-remember-handler))))
+
+(provide 'my-org)

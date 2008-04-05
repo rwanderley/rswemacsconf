@@ -146,3 +146,5 @@ directories and return the filename."
                                        (set (make-variable-buffer-local
                                              'coding-system-for-write)
                                             'emacs-mule))))
+
+(provide 'my-erc)

@@ -7,3 +7,5 @@
 	("brazil" "brasileiro")
 	("portuges" "brasileiro")))
 (autoload 'flyspell-babel-setup "flyspell-babel")
+
+(provide 'my-spelling)

@@ -1,19 +1,21 @@
 ;; -*- Lisp-Interaction -*-
 ;; Import configurations of some modules I
 ;; use frequently
-(load-file "~/.emacs.d/spelling.el")
-(load-file "~/.emacs.d/ecb.el")
-(load-file "~/.emacs.d/emms.el")
-(load-file "~/.emacs.d/erc.el")
-(load-file "~/.emacs.d/git.el")
-(load-file "~/.emacs.d/slime.el")
-(load-file "~/.emacs.d/org.el")
-(load-file "~/.emacs.d/weblogger.el")
-(load-file "~/.emacs.d/gnus.el")
-(load-file "~/.emacs.d/latex.el")
-(load-file "~/.emacs.d/my-eshell.el")
-(load-file "~/.emacs.d/w3m.el")
-;(load-file "~/.emacs.d/newsticker.el")
+
+(add-to-list 'load-path "~/.emacs.d")
+(require 'my-spelling)
+(require 'my-ecb)
+(require 'my-emms)
+(require 'my-erc)
+(require 'my-git)
+(require 'my-slime)
+(require 'my-org)
+(require 'my-weblogger)
+(require 'my-gnus)
+(require 'my-latex)
+(require 'my-eshell)
+(require 'my-w3m)
+;(require 'my-newsticker)
 
 ;;;; Misc configurations
 
