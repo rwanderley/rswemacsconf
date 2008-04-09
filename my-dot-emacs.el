@@ -13,6 +13,7 @@
 (require 'my-weblogger)
 ;; Switched to Mutt
 ;; (require 'my-gnus)
+(require 'my-mutt)
 (require 'my-latex)
 (require 'my-eshell)
 (require 'my-w3m)

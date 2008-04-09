@@ -91,8 +91,8 @@
 (setq gnus-agent t)
 
 ;; sig-quote
-(load-file "~/.emacs.d/mail/sig-quote.el")
-(require 'sig-quote)
+
+
 (sig-quote-mode 'rmail)
 (setq sq-quote-file "~/.signature.quote"
       sq-quote-delimeter "^%%$"
