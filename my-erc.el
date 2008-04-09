@@ -42,12 +42,10 @@
 (setq erc-nickserv-passwords
       `((freenode     (("rwanderley" . ,freenodepass)))))
 
-
-
 (setq erc-autojoin-channels-alist '(("freenode.net" 
 				     "#emacs"
 				     "#archlinux.br" "#lisp"
-				     "#ratpoison")))
+				     "#ratpoison" "#wget")))
 
 ;; Conect to freenode with C-c e f
 (global-set-key "\C-cef" (lambda ()
@@ -125,6 +123,13 @@ directories and return the filename."
 	(switch-to-buffer buffer)
 	(erc-send-action (erc-default-target)
 			 (format "Ouvindo %s." (rsw/emms-get-current-track-name)))))))
+
+;; TODO: make this a advice or hook
+(defun rsw/erc-count-users ()
+  (interactive)
+  (let ((n 0))
+    (maphash '(lambda (nick data) (incf n)) erc-channel-users)
+    (message (format "%d users on this Channel." n))))
 
 (setq erc-auto-query 'bury)
 
