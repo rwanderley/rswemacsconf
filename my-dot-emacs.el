@@ -16,6 +16,7 @@
 (require 'my-latex)
 (require 'my-eshell)
 (require 'my-w3m)
+(require 'my-twittering)
 ;(require 'my-newsticker)
 
 ;;;; Misc configurations
