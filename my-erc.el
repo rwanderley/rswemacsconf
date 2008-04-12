@@ -124,12 +124,17 @@ directories and return the filename."
 	(erc-send-action (erc-default-target)
 			 (format "Ouvindo %s." (rsw/emms-get-current-track-name)))))))
 
-;; TODO: make this a advice or hook
 (defun rsw/erc-count-users ()
+  "Count the users in current channel"
   (interactive)
   (let ((n 0))
     (maphash '(lambda (nick data) (incf n)) erc-channel-users)
-    (message (format "%d users on this Channel." n))))
+    n))
+
+(defun erc-cmd-COUNT ()
+  "Count command just counts how many users are on the channel
+showing the results on minibuffer"
+  (message (format "%d users on this Channel." (rsw/erc-count-users))))
 
 (setq erc-auto-query 'bury)
 

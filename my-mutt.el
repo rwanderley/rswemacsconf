@@ -4,9 +4,10 @@
 
 (add-hook 'mail-mode-hook
 	  '(lambda ()
-	     (turn-on-auto-fill)
+	     (auto-fill-mode 1)
+	     (abbrev-mode 1)
 	     (flyspell-mode t)
-	     (ispell-change-dictionary "brasileiro")
-	     (local-set-key "<TAB>" 'bbdb-complete-name)))
+	     (local-set-key "\C-Xk" 'server-edit)
+	     (ispell-change-dictionary "brasileiro")))
 
 (provide 'my-mutt)
