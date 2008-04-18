@@ -91,7 +91,7 @@
 (setq gnus-agent t)
 
 ;; sig-quote
-
+(require 'sig-quote)
 
 (sig-quote-mode 'rmail)
 (setq sq-quote-file "~/.signature.quote"

@@ -11,8 +11,7 @@
 (require 'my-slime)
 (require 'my-org)
 (require 'my-weblogger)
-;; Switched to Mutt
-;; (require 'my-gnus)
+(require 'my-gnus)
 (require 'my-mutt)
 (require 'my-latex)
 (require 'my-eshell)

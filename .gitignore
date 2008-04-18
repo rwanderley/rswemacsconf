@@ -4,3 +4,5 @@ erc-log/*
 auto-save-list/*
 session*
 emms/*
+*.old
+
