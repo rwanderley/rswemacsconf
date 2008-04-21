@@ -8,15 +8,9 @@
 ; its necessary for nickserv password to work
 (erc-services-mode 1)
 
-(setq erc-encoding-coding-alist
-      '(("#archlinux.br" . utf-8)))
-
-(setq erc-server-coding-system
-      '(lambda (target)
-	 (if (and erc-server-announced-name
-		  (string-match "localhost" erc-server-announced-name))
-	     '(iso-8859-1 . undecided)
-	   '(utf-8 . undecided))))
+(setq erc-server-coding-system 'utf-8)
+(setq erc-encoding-coding-alist nil)
+(setq erc-server-coding-system nil)
 
 ;; set up spelling
 (erc-spelling-enable)

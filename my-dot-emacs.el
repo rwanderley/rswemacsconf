@@ -7,7 +7,7 @@
 (require 'my-ecb)
 (require 'my-emms)
 (require 'my-erc)
-(require 'my-git)
+;(require 'my-git)
 (require 'my-slime)
 (require 'my-org)
 (require 'my-weblogger)
