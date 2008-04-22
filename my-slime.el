@@ -3,4 +3,7 @@
 (require 'slime)
 (slime-setup)
 
+(eval-after-load 'slime
+  (slime-highlight-edits-mode nil))
+
 (provide 'my-slime)

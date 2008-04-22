@@ -21,6 +21,13 @@
 
 ;;;; Misc configurations
 
+;; Bazaar
+(unless (memq 'Bzr vc-handled-backends)
+  (add-to-list 'vc-handled-backends 'Bzr))
+
+(require 'bazaar)
+(add-hook 'find-file-hooks 'bzr-maybe-activate)
+
 ;; enable emacsclient
 (server-start)
 

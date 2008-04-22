@@ -8,7 +8,7 @@
 (setq ecb-tip-of-the-day nil)
 
 ;; enable compile window
-;; (setq ecb-compile-window-height 15)
+;; (setq ecb-compile-window-height 13)
 ;; (setq ecb-compile-window-temporally-enlarge nil)
 
 ;; Add the repl to the compilation buffers
